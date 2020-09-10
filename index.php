@@ -1,3 +1,33 @@
+<?php 
+
+    if(isset($_POST['btn-send']))
+    {
+       $Name = $_POST['Name'];
+       $Email = $_POST['Email'];
+       $Phone = $_POST['Phone'];
+       $Msg = $_POST['msg'];
+
+       if(empty($Name) || empty($Email) || empty($Phone) || empty($Msg))
+       {
+           header('location:index.php?error');
+       }
+       else
+       {
+           $to = "glennpaulmabao@yahoo.com.ph";
+
+           if(mail($to,$Phone,$Msg,$Email))
+           {
+               header("location:index.php?success");
+           }
+       }
+    }
+    else
+    {
+        header("location:index.php");
+    }
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -224,7 +254,7 @@
             <h1>_______________</h1>
             <p>Fill up the form belown and submit your questions</p>
         </div>
-        <form  action="process.php" method="post" class="shadow" style="width: 80%; height: 547px; margin: 100px auto 0 auto; background-color: #ffffff; padding: 5%;">
+        <form  action="" method="post" class="shadow" style="width: 80%; height: 547px; margin: 100px auto 0 auto; background-color: #ffffff; padding: 5%;">
             <?php 
                             $Msg = "";
                             if(isset($_GET['error']))
