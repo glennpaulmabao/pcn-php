@@ -97,7 +97,7 @@
             </div>
             <div class="col-lg-5 col-md-12 col-sm-12">
                 <div class="pcn-contact-form">
-                    <form>
+                    <form action="process.php" method="post">
                         <div class="row" style="padding: 30px 30px 0 30px;">
                             <h3 style="font-weight:300; color: #004a80;">Contact Us to Learn More.</h3>
                             <p style="font-size: 16px; font-weight: 200;">Fill out the form below to have an PCN-Strategies specialist contact you.</p>
