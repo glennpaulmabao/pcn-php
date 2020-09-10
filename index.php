@@ -254,7 +254,7 @@
             <h1>_______________</h1>
             <p>Fill up the form belown and submit your questions</p>
         </div>
-        <form  action="" method="post" class="shadow" style="width: 80%; height: 547px; margin: 100px auto 0 auto; background-color: #ffffff; padding: 5%;">
+        <form  action="index.php" method="POST" class="shadow" style="width: 80%; height: 547px; margin: 100px auto 0 auto; background-color: #ffffff; padding: 5%;">
             <?php 
                             $Msg = "";
                             if(isset($_GET['error']))
