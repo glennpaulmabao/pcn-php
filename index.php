@@ -21,10 +21,6 @@ if(isset($_POST['btn-send']))
        }
    }
 }
-else
-{
-    header("location:index.php");
-}
 ?>
 
 <html lang="en">
