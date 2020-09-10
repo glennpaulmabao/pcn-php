@@ -74,8 +74,8 @@
             <h1 style="padding: 0px; width: 100%; color: #ffffff;">Education Solutions</h1>
             <p style="padding: 0px; width: 100%; color: #ffffff;">Secure and optimized data centers require the expertise PCN can provide.</p>
             <div class="hero-btn">
-                <a href="higher-ed.html"  class="btn pcn-hero-btn" >Higher Education Solutions</a>
-                <a href="k12.html"  class="btn pcn-hero-btn">K12 Education Solutions</a>
+                <a href="higher-ed.php"  class="btn pcn-hero-btn" >Higher Education Solutions</a>
+                <a href="k12.php"  class="btn pcn-hero-btn">K12 Education Solutions</a>
             </div>
         </div>
     </div>
@@ -117,7 +117,7 @@
                         <h1 style="font-weight: 300; font-size: 25px;" style="margin: 0 0 1% 0;">Higher Education Solutions</h1>
                         <p style="color: black; margin: 5% 0 0 0; height: 95px; font-weight: 300;">Create an exceptional learning institution for students and staff — complete with reliable connectivity, robust cybersecurity and innovation hubs.</p>
                         <div class="row">
-                            <a href="higher-ed.html" class="btn" role="button">LEARN MORE</a>
+                            <a href="higher-ed.php" class="btn" role="button">LEARN MORE</a>
                         </div>
                     </div>
                 </div>
@@ -127,7 +127,7 @@
                         <h1 style="font-weight: 300; font-size: 25px;" style="margin: 0 0 1% 0;">K-12 Education</h1>
                         <p style="color: black; margin: 5% 0 0 0; height: 95px; font-weight: 300;">Equip your schools with devices and IT infrastructure that inspires learning, supports educators and improves school efficiency.</p>
                         <div class="row">
-                            <a href="k12.html" class="btn" role="button">LEARN MORE</a>
+                            <a href="k12.php" class="btn" role="button">LEARN MORE</a>
                         </div>
                     </div>
                 </div>
