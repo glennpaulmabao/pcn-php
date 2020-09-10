@@ -187,10 +187,10 @@
 
             <div class="col-2">
                 <h1>Links</h1>
-                <a href="index.html"><li>Home</li></a>
-                <a href="index.html"><li>Services</li></a>
-                <a href="index.html"><li>Products</li></a>
-                <a href="index.html"><li>Contact</li></a>
+                <a href="index.php"><li>Home</li></a>
+                <a href="index.php"><li>Services</li></a>
+                <a href="index.php"><li>Products</li></a>
+                <a href="index.php"><li>Contact</li></a>
             </div>
 
 

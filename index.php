@@ -33,7 +33,7 @@
 
     <nav class="navbar sticky-top navbar-expand-md navbar-light shadow" style="background-color: white;">
         <div class="container">
-            <a class="navbar-brand" href="./index.html">
+            <a class="navbar-brand" href="./index.php">
                 <img src="./assets/images/logo.png" style="width:175px; height: auto;" alt="">
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
@@ -60,10 +60,10 @@
                             <a class="dropdown-item" role="presentation" href="cloud.php">CLOUD</a></div>
                     </li>
                     <li class="nav-item" role="presentation">
-                          <a class="nav-link" href="Products.html">PRODUCTS</a>
+                          <a class="nav-link" href="Products.php">PRODUCTS</a>
                     </li>
                     <li class="nav-item" role="presentation">
-                          <a class="nav-link" href="ContactUs.html">CONTACT US</a>
+                          <a class="nav-link" href="ContactUs.php">CONTACT US</a>
                     </li>
                 </ul>
             </div>

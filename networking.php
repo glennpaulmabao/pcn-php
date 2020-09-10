@@ -31,7 +31,7 @@
 
     <nav class="navbar sticky-top navbar-expand-md navbar-light shadow" style="background-color: white;">
         <div class="container">
-            <a class="navbar-brand" href="./index.html">
+            <a class="navbar-brand" href="./index.php">
                 <img src="./assets/images/logo.png" style="width:175px; height: auto;" alt="">
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
@@ -42,26 +42,26 @@
                 </ul>
                 <ul class="navbar-nav">
                     <li class="nav-item active">
-                        <a class="nav-link active" href="index.html">HOME</a>
+                        <a class="nav-link active" href="index.php">HOME</a>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                           SOLUTIONS
                         </a>
                     <div class="dropdown-menu" role="menu">
-                            <a class="dropdown-item" role="presentation" href="mobility.html">MOBILITY</a>
-                            <a class="dropdown-item" role="presentation" href="education.html">EDUCATION&nbsp;</a>
-                            <a class="dropdown-item" role="presentation" href="workforce.html">REMOTE WORKFORCE</a>
-                            <a class="dropdown-item" role="presentation" href="datacenter.html">DATA CENTER</a>
-                            <a class="dropdown-item" role="presentation" href="networking.html">NETWORKING</a>
-                            <a class="dropdown-item" role="presentation" href="security.html">SECURITY</a>
-                            <a class="dropdown-item" role="presentation" href="cloud.html">CLOUD</a></div>
+                            <a class="dropdown-item" role="presentation" href="mobility.php">MOBILITY</a>
+                            <a class="dropdown-item" role="presentation" href="education.php">EDUCATION&nbsp;</a>
+                            <a class="dropdown-item" role="presentation" href="workforce.php">REMOTE WORKFORCE</a>
+                            <a class="dropdown-item" role="presentation" href="datacenter.php">DATA CENTER</a>
+                            <a class="dropdown-item" role="presentation" href="networking.php">NETWORKING</a>
+                            <a class="dropdown-item" role="presentation" href="security.php">SECURITY</a>
+                            <a class="dropdown-item" role="presentation" href="cloud.php">CLOUD</a></div>
                     </li>
                     <li class="nav-item" role="presentation">
-                          <a class="nav-link" href="Products.html">PRODUCTS</a>
+                          <a class="nav-link" href="Products.php">PRODUCTS</a>
                     </li>
                     <li class="nav-item" role="presentation">
-                          <a class="nav-link" href="ContactUs.html">CONTACT US</a>
+                          <a class="nav-link" href="ContactUs.php">CONTACT US</a>
                     </li>
                 </ul>
             </div>
@@ -363,10 +363,10 @@
 
             <div class="col-2">
                 <h1>Links</h1>
-                <a href="index.html"><li>Home</li></a>
-                <a href="index.html"><li>Services</li></a>
-                <a href="index.html"><li>Products</li></a>
-                <a href="index.html"><li>Contact</li></a>
+                <a href="index.php"><li>Home</li></a>
+                <a href="index.php"><li>Services</li></a>
+                <a href="index.php"><li>Products</li></a>
+                <a href="index.php"><li>Contact</li></a>
             </div>
 
 
