@@ -8,7 +8,7 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css">
 <link rel="stylesheet" href="assets/style.css">
-<title>Good morning Form</title>
+<title>PCN Strategies | Official Website</title>
 </head>
 <body>
 
@@ -44,20 +44,20 @@
                 </ul>
                 <ul class="navbar-nav">
                     <li class="nav-item active">
-                        <a class="nav-link active" href="index.html">HOME</a>
+                        <a class="nav-link active" href="index.php">HOME</a>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                           SOLUTIONS
                         </a>
                     <div class="dropdown-menu" role="menu">
-                            <a class="dropdown-item" role="presentation" href="mobility.html">MOBILITY</a>
-                            <a class="dropdown-item" role="presentation" href="education.html">EDUCATION&nbsp;</a>
-                            <a class="dropdown-item" role="presentation" href="workforce.html">REMOTE WORKFORCE</a>
-                            <a class="dropdown-item" role="presentation" href="datacenter.html">DATA CENTER</a>
-                            <a class="dropdown-item" role="presentation" href="networking.html">NETWORKING</a>
-                            <a class="dropdown-item" role="presentation" href="security.html">SECURITY</a>
-                            <a class="dropdown-item" role="presentation" href="cloud.html">CLOUD</a></div>
+                            <a class="dropdown-item" role="presentation" href="mobility.php">MOBILITY</a>
+                            <a class="dropdown-item" role="presentation" href="education.php">EDUCATION&nbsp;</a>
+                            <a class="dropdown-item" role="presentation" href="workforce.php">REMOTE WORKFORCE</a>
+                            <a class="dropdown-item" role="presentation" href="datacenter.php">DATA CENTER</a>
+                            <a class="dropdown-item" role="presentation" href="networking.php">NETWORKING</a>
+                            <a class="dropdown-item" role="presentation" href="security.php">SECURITY</a>
+                            <a class="dropdown-item" role="presentation" href="cloud.php">CLOUD</a></div>
                     </li>
                     <li class="nav-item" role="presentation">
                           <a class="nav-link" href="Products.html">PRODUCTS</a>
@@ -86,7 +86,7 @@
                     <p>With today’s work environment constantly on-the-go, equip your workforce with devices they need for success wherever they are. Let PCN help you capture your data and manage your operations right from your fingertips.</p>
                 </div>
               <div class="col-lg-4 col-md-4 col-sm-12">
-                <a href="ContactUs.html" class="btn carousel-btn" role="button">CONTACT US</a>
+                <a href="ContactUs.php" class="btn carousel-btn" role="button">CONTACT US</a>
               </div>
             </div>   
           </div>
@@ -98,7 +98,7 @@
                     <p>Create an exceptional learning institution for students and staff — complete with reliable connectivity, robust cybersecurity and innovation hubs.</p>
                 </div>
                 <div class="col-lg-4 col-sm-12 col-md-4 col-sm-12">
-                    <a href="ContactUs.html" class="btn carousel-btn" role="button">CONTACT US</a>
+                    <a href="ContactUs.php" class="btn carousel-btn" role="button">CONTACT US</a>
                 </div>
             </div>   
           </div>
@@ -110,7 +110,7 @@
                     <p>Does your security strategy benefit you, or your cyber adversaries?</p>
                 </div>
                 <div class="col-lg-4 col-sm-12 col-md-4 col-sm-12">
-                    <a href="ContactUs.html" class="btn carousel-btn" role="button">CONTACT US</a>
+                    <a href="ContactUs.php" class="btn carousel-btn" role="button">CONTACT US</a>
                 </div>
             </div>   
           </div>
@@ -137,7 +137,7 @@
                     <h1>Mobility Solutions</h1>
                     <p style="height:80px;">With today’s work environment constantly on-the-go, equip your workforce with devices.</p>
                     <div class="row">
-                        <a href="mobility.html" class="btn" role="button">LEARN MORE</a>
+                        <a href="mobility.php" class="btn" role="button">LEARN MORE</a>
                     </div>
                 </div>
             </div>
@@ -147,11 +147,11 @@
                     <img src="./assets/images/icons/icon-education.png" alt="">
                     <h1>Education</h1>
                     <p style="height:80px;">
-                        <a href="higher-ed.html" class="btn" style="padding: 8px 0;" role="button">HIGHER EDUCATION</a>
+                        <a href="higher-ed.php" class="btn" style="padding: 8px 0;" role="button">HIGHER EDUCATION</a>
                         <a href="k12.html" class="btn" style="padding: 8px 0;" role="button">K12</a>                    
                     </p>
                     <div class="row">
-                        <a href="education.html" class="btn" role="button">LEARN MORE</a>
+                        <a href="education.php" class="btn" role="button">LEARN MORE</a>
                     </div>
                 </div>
             </div>
@@ -162,7 +162,7 @@
                     <h1>Remote Workforce</h1>
                     <p style="height:80px;">Many PCN partners are offering free trials and offers for many work from home solutions.</p>
                     <div class="row">
-                        <a href="workforce.html" class="btn" role="button">LEARN MORE</a>
+                        <a href="workforce.php" class="btn" role="button">LEARN MORE</a>
                     </div>
                 </div>
             </div>
@@ -173,7 +173,7 @@
                     <h1>Data Center</h1>
                     <p style="height:80px;">Out of sight, out of mind, on budget and in sync: the dream of the harmonious, optimized data center!</p>
                     <div class="row">
-                        <a href="datacenter.html" class="btn" role="button">LEARN MORE</a>
+                        <a href="datacenter.php" class="btn" role="button">LEARN MORE</a>
                     </div>
                 </div>
             </div>
@@ -189,7 +189,7 @@
                     <h1>Networking</h1>
                     <p style="height:80px;">Out of sight, out of mind, on budget and in sync: the dream of the harmonious, optimized data center!</p>
                     <div class="row">
-                        <a href="datacenter.html" class="btn" role="button">LEARN MORE</a>
+                        <a href="datacenter.php" class="btn" role="button">LEARN MORE</a>
                     </div>
                 </div>
             </div>
@@ -200,7 +200,7 @@
                     <h1>Security</h1>
                     <p style="height:80px;">Does your security strategy benefit you, or your cyber adversaries?</p>
                     <div class="row">
-                        <a href="security.html" class="btn" role="button">LEARN MORE</a>
+                        <a href="security.php" class="btn" role="button">LEARN MORE</a>
                     </div>
                 </div>
             </div>
@@ -211,7 +211,7 @@
                 <h1>Cloud</h1>
                 <p style="height:80px;">Are you ready for the next phase of digital transformation? Take your organization into the Cloud.</p>
                 <div class="row">
-                    <a href="cloud.html" class="btn" role="button">LEARN MORE</a>
+                    <a href="cloud.php" class="btn" role="button">LEARN MORE</a>
                 </div>
             </div>
         </div>
@@ -294,10 +294,10 @@
 
             <div class="col-2">
                 <h1>Links</h1>
-                <a href="index.html"><li>Home</li></a>
-                <a href="index.html"><li>Services</li></a>
-                <a href="index.html"><li>Products</li></a>
-                <a href="index.html"><li>Contact</li></a>
+                <a href="index.php"><li>Home</li></a>
+                <a href="index.php"><li>Services</li></a>
+                <a href="index.php"><li>Products</li></a>
+                <a href="index.php"><li>Contact</li></a>
             </div>
 
 
