@@ -13,7 +13,7 @@
        }
        else
        {
-           $to = "glennpaulmabao@yahoo.com.ph";
+           $to = "glennfalse.ph@gmail.com";
 
            if(mail($to,$Phone,$Msg,$Email))
            {
