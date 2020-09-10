@@ -101,20 +101,34 @@
                         <div class="row" style="padding: 30px 30px 0 30px;">
                             <h3 style="font-weight:300; color: #004a80;">Contact Us to Learn More.</h3>
                             <p style="font-size: 16px; font-weight: 200;">Fill out the form below to have an PCN-Strategies specialist contact you.</p>
+                                <?php 
+                                    $Msg = "";
+                                    if(isset($_GET['error']))
+                                    {
+                                        $Msg = " Please Fill in the Blanks ";
+                                        echo '<div class="alert alert-danger">'.$Msg.'</div>';
+                                    }
+
+                                    if(isset($_GET['success']))
+                                    {
+                                        $Msg = " Your Message Has Been Sent ";
+                                        echo '<div class="alert alert-success">'.$Msg.'</div>';
+                                    }
+                                ?>    
                         </div>
                         <div class="col-lg col-sm">
-                            <input type="text" class="form-control form-control-lg" style="border-radius: 0px; margin: 20px 0;" placeholder="Name">
+                            <input name="Name" type="text" class="form-control form-control-lg" style="border-radius: 0px; margin: 20px 0;" placeholder="Name">
                           </div>
-                          <div class="col-lg col-sm">
+                          <div name="Email" class="col-lg col-sm">
                             <input type="text" class="form-control form-control-lg" style="border-radius: 0px; margin: 20px 0;" placeholder="Email">
                           </div>
-                          <div class="col-lg col-sm">
+                          <div name="Phone" class="col-lg col-sm">
                             <input type="text" class="form-control form-control-lg" style="border-radius: 0px; margin: 20px 0;" placeholder="Phone">
                           </div>
                           <div class="col-lg col-sm">
-                            <textarea class="form-control-text-area" style="border-radius: 0px;" id="exampleFormControlTextarea1" placeholder="Message"></textarea>                </div>
+                            <textarea name="msg" class="form-control-text-area" style="border-radius: 0px;" id="exampleFormControlTextarea1" placeholder="Message"></textarea>                </div>
                         <div class="col-lg col-sm pcn-from-input" >
-                            <a href="" class="btn" role="button">SUBMIT</a>
+                        <button class="btn" style="position: absolute; bottom: 0px;" name="btn-send"> Send </button>
                         </div>
                     </form>
                 </div>
