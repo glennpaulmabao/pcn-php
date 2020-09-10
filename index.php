@@ -224,22 +224,7 @@
             <h1>_______________</h1>
             <p>Fill up the form belown and submit your questions</p>
         </div>
-        <form  action="process.php" method="post" class="shadow" style="width: 80%; height: 547px; margin: 100px auto 0 auto; background-color: #ffffff; padding: 5%;">
-            <?php 
-                            $Msg = "";
-                            if(isset($_GET['error']))
-                            {
-                                $Msg = " Please Fill in the Blanks ";
-                                echo '<div class="alert alert-danger">'.$Msg.'</div>';
-                            }
-
-                            if(isset($_GET['success']))
-                            {
-                                $Msg = " Your Message Has Been Sent ";
-                                echo '<div class="alert alert-success">'.$Msg.'</div>';
-                            }
-                        
-            ?>    
+        <form  action="process.php" method="post" class="shadow" style="width: 80%; height: 547px; margin: 100px auto 0 auto; background-color: #ffffff; padding: 5%;">    
         <div class="form-row">
               <div class="col-lg col-sm pcn-from-input">
                 <input type="text" name="Name" class="form-control form-control-lg" style="border-radius: 0px;" placeholder="Full Name">
