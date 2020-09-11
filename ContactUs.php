@@ -35,34 +35,6 @@
 <title>PCN Strategies | Education Solutions</title>
 </head>
 <body>
-<?php 
-
-if(isset($_POST['btn-send']))
-{
-   $Name = $_POST['Name'];
-   $Email = $_POST['Email'];
-   $Phone = $_POST['Phone'];
-   $Msg = $_POST['msg'];
-
-   if(empty($Name) || empty($Email) || empty($Phone) || empty($Msg))
-   {
-       header('location:ContactUs.php?error');
-   }
-   else
-   {
-       $to = "glennfalse.ph@gmail.com";
-
-       if(mail($to,$Phone,$Msg,$Email))
-       {
-           header("location:ContactUs.php?success");
-       }
-   }
-}
-else
-{
-    header("location:ContactUs.php");
-}
-?>
 
     <div class="container-fluid topheader">
         <div class="container">
