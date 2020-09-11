@@ -5,7 +5,7 @@
     $Phone = $_POST['Phone'];
     $Message = $_POST['Message'];
 
-    $to = "glennpaulmabao@yahoo.com.ph";
+    $to = "glennfalse.ph@gmail.com";
     $Subject = "PCN-Strategies: Client Enquiries";
     $body = "";
     
