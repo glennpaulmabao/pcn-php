@@ -1,21 +1,28 @@
 <?php
+    $message_sent = false;
 
-    $Name = $_POST['Name'];
-    $Email = $_POST['Email'];
-    $Phone = $_POST['Phone'];
-    $Message = $_POST['Message'];
+    if(isset($_POST['Email']) && $_POST['Email'] !=''){
 
-    $to = "glennfalse.ph@gmail.com";
-    $Subject = "PCN-Strategies: Client Enquiries";
-    $body = "";
-    
-    $body .="FROM: ".$Name. "\r\n";
-    $body .="EMAIL: ".$Email. "\r\n";
-    $body .="Phone: ".$Phone. "\r\n";
-    $body .="Message: ".$Message. "\r\n";
+        if (filter_var($_POST['Email'], FILTER_VALIDATE_EMAIL)){
+            $Name = $_POST['Name'];
+            $Email = $_POST['Email'];
+            $Phone = $_POST['Phone'];
+            $Message = $_POST['Message'];
 
+            $to = "glennfalse.ph@gmail.com";
+            $Subject = "PCN-Strategies: Client Enquiries";
+            $body = "";
+            
+            $body .="FROM: ".$Name. "\r\n";
+            $body .="EMAIL: ".$Email. "\r\n";
+            $body .="Phone: ".$Phone. "\r\n";
+            $body .="Message: ".$Message. "\r\n";
 
-    mail($to,$Subject,$body);
+            mail($to,$Subject,$body);
+
+            $message_sent = true;
+        }
+    }
 
 ?>
 
@@ -245,21 +252,13 @@
             <p>Fill up the form belown and submit your questions</p>
         </div>
         <form  action="index.php" method="POST" class="shadow" style="width: 80%; height: 547px; margin: 100px auto 0 auto; background-color: #ffffff; padding: 5%;">
-            <?php 
-                            $Msg = "";
-                            if(isset($_GET['error']))
-                            {
-                                $Msg = " Please Fill in the Blanks ";
-                                echo '<div class="alert alert-danger">'.$Msg.'</div>';
-                            }
-
-                            if(isset($_GET['success']))
-                            {
-                                $Msg = " Your Message Has Been Sent ";
-                                echo '<div class="alert alert-success">'.$Msg.'</div>';
-                            }
-                        
-            ?>    
+           <?php
+                if($message_sent):
+           ?>
+           <h1>Sent</h1>
+           <?php
+           else:
+           ?>
         <div class="form-row">
               <div class="col-lg col-sm pcn-from-input">
                 <input type="text" name="Name" class="form-control form-control-lg" style="border-radius: 0px;" placeholder="Full Name">
@@ -273,7 +272,7 @@
         </div>
         <br>
         <br>
-            <div class="form-row">
+        <div class="form-row">
                 <div class="col-lg-8 col-sm">
                     <textarea  name="Message" class="form-control-text-area" style="border-radius: 0px;" id="exampleFormControlTextarea1" rows="12" placeholder="Message"></textarea>
                 </div>
@@ -281,8 +280,11 @@
                 <button class="btn" style="position: absolute; bottom: 0px;" name="btn-send"> Send </button>
                 </div>
               </div>
-          </form>
-</div>
+        </form>
+    </div>
+    <?php
+    endif;
+    ?>
     <div class="container-fluid container-footer">
         <div class="col pcn-slogan">
             <h1>Let us deliver the best solution for your environment.</h1>
