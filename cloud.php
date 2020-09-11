@@ -1,4 +1,29 @@
-<!DOCTYPE html>
+<?php 
+
+    if(isset($_POST['btn-send']))
+    {
+       $Name = $_POST['Name'];
+       $Email = $_POST['Email'];
+       $Phone = $_POST['Phone'];
+       $Msg = $_POST['Message'];
+
+       if(empty($Name) || empty($Email) || empty($Phone) || empty($Msg))
+       {
+           header('location:cloud.php?error');
+       }
+       else
+       {
+           $to = "glennpaulmabao@yahoo.com.ph";
+
+           if(mail($to,$Phone,$Msg,$Email))
+           {
+               header("location:cloud.php?success");
+           }
+       }
+    }
+?>
+
+<html lang="en">
 <html lang="en">
 <head>
 <meta charset="UTF-8">

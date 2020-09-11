@@ -1,3 +1,28 @@
+<?php 
+
+    if(isset($_POST['btn-send']))
+    {
+       $Name = $_POST['Name'];
+       $Email = $_POST['Email'];
+       $Phone = $_POST['Phone'];
+       $Msg = $_POST['Message'];
+
+       if(empty($Name) || empty($Email) || empty($Phone) || empty($Msg))
+       {
+           header('location:ContactUs.php?error');
+       }
+       else
+       {
+           $to = "glennpaulmabao@yahoo.com.ph";
+
+           if(mail($to,$Phone,$Msg,$Email))
+           {
+               header("location:ContactUs.php?success");
+           }
+       }
+    }
+?>
+
 <html lang="en">
 <head>
 <meta charset="UTF-8">
