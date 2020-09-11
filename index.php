@@ -1,26 +1,27 @@
-<?php 
+<?php
+    echo "<pre>";
 
-if(isset($_POST['btn-send']))
-{
-   $Name = $_POST['Name'];
-   $Email = $_POST['Email'];
-   $Phone = $_POST['Phone'];
-   $Msg = $_POST['msg'];
+    print_r($_POST);
 
-   if(empty($Name) || empty($Email) || empty($Phone) || empty($Msg))
-   {
-       header('location:index.php?error');
-   }
-   else
-   {
-       $to = "glennfalse.ph@gmail.com";
+    echo '</pre>';
 
-       if(mail($to,$Phone,$Msg,$Email))
-       {
-           header("location:index.php?success");
-       }
-   }
-}
+    $Name = $_POST['Name'];
+    $Email = $_POST['Email'];
+    $Phone = $_POST['Phone'];
+    $Message = $_POST['Message'];
+
+    $to = "glennpaulmabao@yahoo.com.ph";
+    $Subject = "PCN-Strategies: Client Enquiries";
+    $body = "";
+    
+    $body .="FROM: ".$Name. "\r\n";
+    $body .="EMAIL: ".$Email. "\r\n";
+    $body .="Phone: ".$Phone. "\r\n";
+    $body .="Message: ".$Message. "\r\n";
+
+
+    mail($to,$Subject,$body);
+
 ?>
 
 <html lang="en">
