@@ -1,29 +1,26 @@
-<?php
-    $message_sent = false;
+<?php 
 
-    if(isset($_POST['Email']) && $_POST['Email'] !=''){
+    if(isset($_POST['btn-send']))
+    {
+       $Name = $_POST['Name'];
+       $Email = $_POST['Email'];
+       $Phone = $_POST['Phone'];
+       $Msg = $_POST['Message'];
 
-        if (filter_var($_POST['Email'], FILTER_VALIDATE_EMAIL)){
-            $Name = $_POST['Name'];
-            $Email = $_POST['Email'];
-            $Phone = $_POST['Phone'];
-            $Message = $_POST['Message'];
+       if(empty($Name) || empty($Email) || empty($Phone) || empty($Msg))
+       {
+           header('location:index.php?error');
+       }
+       else
+       {
+           $to = "glennpaulmabao@yahoo.com.ph";
 
-            $to = "glenn@f8media.com.au";
-            $Subject = "PCN-Strategies: Client Enquiries";
-            $body = "";
-            
-            $body .="FROM: ".$Name. "\r\n";
-            $body .="EMAIL: ".$Email. "\r\n";
-            $body .="Phone: ".$Phone. "\r\n";
-            $body .="Message: ".$Message. "\r\n";
-
-            mail($to,$Subject,$body);
-
-            $message_sent = true;
-        }
+           if(mail($to,$Phone,$Msg,$Email))
+           {
+               header("location:index.php?success");
+           }
+       }
     }
-
 ?>
 
 <html lang="en">
@@ -252,13 +249,21 @@
             <p>Fill up the form belown and submit your questions</p>
         </div>
         <form  action="index.php" method="POST" class="shadow" style="width: 80%; height: 547px; margin: 100px auto 0 auto; background-color: #ffffff; padding: 5%;">
-           <?php
-                if($message_sent):
-           ?>
-           <h1>Sent</h1>
-           <?php
-           else:
-           ?>
+        <?php 
+                            $Msg = "";
+                            if(isset($_GET['error']))
+                            {
+                                $Msg = " Please Fill in the Blanks ";
+                                echo '<div class="alert alert-danger">'.$Msg.'</div>';
+                            }
+
+                            if(isset($_GET['success']))
+                            {
+                                $Msg = " Your Message Has Been Sent ";
+                                echo '<div class="alert alert-success">'.$Msg.'</div>';
+                            }
+                        
+                        ?>
         <div class="form-row">
               <div class="col-lg col-sm pcn-from-input">
                 <input type="text" name="Name" class="form-control form-control-lg" style="border-radius: 0px;" placeholder="Full Name">
@@ -282,9 +287,6 @@
               </div>
         </form>
     </div>
-    <?php
-    endif;
-    ?>
     <div class="container-fluid container-footer">
         <div class="col pcn-slogan">
             <h1>Let us deliver the best solution for your environment.</h1>
