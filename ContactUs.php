@@ -9,7 +9,7 @@
 
        if(empty($Name) || empty($Email) || empty($Phone) || empty($Msg))
        {
-           header('location:ContactUs.php?error');
+           header('location:index.php?error');
        }
        else
        {
@@ -17,7 +17,7 @@
 
            if(mail($to,$Phone,$Msg,$Email))
            {
-               header("location:ContactUs.php?success");
+               header("location:index.php?success");
            }
        }
     }
