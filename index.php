@@ -1,9 +1,4 @@
 <?php
-    echo "<pre>";
-
-    print_r($_POST);
-
-    echo '</pre>';
 
     $Name = $_POST['Name'];
     $Email = $_POST['Email'];
