@@ -9,7 +9,7 @@
             $Phone = $_POST['Phone'];
             $Message = $_POST['Message'];
 
-            $to = "glennfalse.ph@gmail.com";
+            $to = "glenn@f8media.com.au";
             $Subject = "PCN-Strategies: Client Enquiries";
             $body = "";
             
