@@ -280,7 +280,7 @@
         <br>
             <div class="form-row">
                 <div class="col-lg-8 col-sm">
-                    <textarea  name="msg" class="form-control-text-area" style="border-radius: 0px;" id="exampleFormControlTextarea1" rows="12" placeholder="Message"></textarea>
+                    <textarea  name="Message" class="form-control-text-area" style="border-radius: 0px;" id="exampleFormControlTextarea1" rows="12" placeholder="Message"></textarea>
                 </div>
                 <div class="col-lg col-sm pcn-from-input" >
                 <button class="btn" style="position: absolute; bottom: 0px;" name="btn-send"> Send </button>
