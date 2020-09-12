@@ -14,8 +14,9 @@
        else
        {
            $to = "glennpaulmabao@yahoo.com.ph";
+           $subject = "PCN-Strategies: Client Inquiries";
 
-           if(mail($to,$Phone,$Msg,$Email))
+           if(mail($to,$subject,$Msg,$Email,$Phone))
            {
                header("location:index.php?success");
            }
