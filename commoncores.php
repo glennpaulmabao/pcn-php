@@ -22,20 +22,54 @@
        }
     }
 ?>
-
+<!DOCTYPE html>
 <html lang="en">
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
-<meta name="Description" content="Enter your description here"/>
+<meta name="Description" content="PCN Strategies is a market leader in providing mobility solutions for today's mobile workforce. Cars, trucks, planes and trains...if it moves, we can design a solution for it."/>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css">
 <link rel="stylesheet" href="assets/style.css">
 <title>PCN Strategies | Common Core State Standards Initiatives</title>
 </head>
 <body>
+<?php 
+                            $Msg = "";
+                            if(isset($_GET['error']))
+                            {
+                                $Msg = " Please Complete the Contact Form Below. ";
+                                echo '
+
+                                <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                                <strong>Wait!</strong> '.$Msg.'
+                                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                                </div>
+
+                                ';
+                            }
+
+                            if(isset($_GET['success']))
+                            {
+                                $Msg = " Your Message Has Been Sent ";
+
+                                echo '
+
+                                <div class="alert alert-success alert-dismissible fade show" role="alert">
+                                <strong>Awesome!</strong> '.$Msg.'
+                                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                                </div>
+
+                                ';
+                            }
+                        
+        ?>
     <div class="container-fluid topheader">
         <div class="container">
             <div class="row">
@@ -56,7 +90,7 @@
 
     <nav class="navbar sticky-top navbar-expand-md navbar-light shadow" style="background-color: white;">
         <div class="container">
-            <a class="navbar-brand" href="./index.php">
+            <a class="navbar-brand" href="index">
                 <img src="./assets/images/logo.png" style="width:175px; height: auto;" alt="">
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
@@ -67,26 +101,26 @@
                 </ul>
                 <ul class="navbar-nav">
                     <li class="nav-item active">
-                        <a class="nav-link active" href="index.php">HOME</a>
+                        <a class="nav-link active" href="index">HOME</a>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                           SOLUTIONS
                         </a>
                     <div class="dropdown-menu" role="menu">
-                            <a class="dropdown-item" role="presentation" href="mobility.php">MOBILITY</a>
-                            <a class="dropdown-item" role="presentation" href="education.php">EDUCATION&nbsp;</a>
-                            <a class="dropdown-item" role="presentation" href="workforce.php">REMOTE WORKFORCE</a>
-                            <a class="dropdown-item" role="presentation" href="datacenter.php">DATA CENTER</a>
-                            <a class="dropdown-item" role="presentation" href="networking.php">NETWORKING</a>
-                            <a class="dropdown-item" role="presentation" href="security.php">SECURITY</a>
-                            <a class="dropdown-item" role="presentation" href="cloud.php">CLOUD</a></div>
+                            <a class="dropdown-item" role="presentation" href="Mobility-Solutions">MOBILITY</a>
+                            <a class="dropdown-item" role="presentation" href="Education-Solutions">EDUCATION&nbsp;</a>
+                            <a class="dropdown-item" role="presentation" href="Remote-Workforce-Solutions">REMOTE WORKFORCE</a>
+                            <a class="dropdown-item" role="presentation" href="Data-Center-Solutions">DATA CENTER</a>
+                            <a class="dropdown-item" role="presentation" href="Networking-Solutions">NETWORKING</a>
+                            <a class="dropdown-item" role="presentation" href="Security-Solutions">SECURITY</a>
+                            <a class="dropdown-item" role="presentation" href="Cloud-Solutions">CLOUD</a></div>
                     </li>
                     <li class="nav-item" role="presentation">
-                          <a class="nav-link" href="Products.php">PRODUCTS</a>
+                          <a class="nav-link" href="Products">PRODUCTS</a>
                     </li>
                     <li class="nav-item" role="presentation">
-                          <a class="nav-link" href="ContactUs.php">CONTACT US</a>
+                          <a class="nav-link" href="Contact-Us">CONTACT US</a>
                     </li>
                 </ul>
             </div>
@@ -98,7 +132,7 @@
     <div class="container-fluid" style="background-color: #f0f0f0;">
         <div ID="CommonCores" class="solutions container">
             <div class="row" style="padding:10% 0;">
-                <div class="col-5">
+                <div class="col-lg-5 col-md-5 col-sm-12">
                     <h1 style="font-weight: 200; font-size: 1.5em; text-transform: none;">Common Core Standards In Your State</h1>
                     <br>
                     <p>Forty-one states, the District of Columbia, four territories, and the Department of Defense Education Activity (DoDEA) have adopted the Common Core State Standards. The map below provides information about the process each state or territory followed to adopt their academic standards. Please note that states routinely review their academic standards and may choose to change or add onto the standards to best meet the needs of their students. The map provides links to the website in each state and territory that provides the most up-to-date information on a state’s specific academic standards.</p>
@@ -106,7 +140,7 @@
                         <a href="http://www.corestandards.org/standards-in-your-state/" class="btn" role="button" target="_blank">LEARN MORE</a>
                     </div>
                 </div>
-                <div class="col-7">
+                <div class="col-lg-7 col-md-7 col-sm-12">
                     <div style="width: 80%; height: auto; float: right; margin: auto;">
                         <img src="./assets/images/USA-MAP.png" width="100%" height="100%" alt="">
                         <div class="row" style="margin: 5% 0;">
@@ -123,55 +157,59 @@
 
 
     <div class="container-fluid" style="padding: 8%;">
-        <h1 style="margin: auto; color: #004a80; font-weight: 200; font-size: 35px; text-align: center; text-transform: none;">Preparing America's students for success.</h1>
-        <p style="margin: auto; color: #393939; font-weight: 200; font-size: 18px; text-align: center; width: 70%; margin-top:3%;">Common Core is a set of high-quality academic standards in mathematics and English language arts/literacy (ELA). These learning goals outline what a student should know and be able to do at the end of each grade.</p>
-    
-        <div class="row">
-            <div class="col-4">
-                <div class="shadow solutions-box">
-                    <div class="row" style="height: 150px;">
-                        <img src="./assets/images/icons/icon-k12experience.png" style="margin: 3% 0; width: auto; height: 30px;" alt="">
-                        <h1 style="font-weight: 300; font-size: 25px;" style="margin: 0 0 1% 0;">Learn why the Common Core is important for your child</h1>
-                    </div>
-                    <div class="row">
-                        <div class="pcn-list" style="width: 100%;">
-                            <li><img src="./assets/images/icons/CheckMark.png" style="margin: 2% 1%; height: 20px; width: auto;" alt=""> WHAT PARENTS SHOULD KNOW</li>
-                            <li><img src="./assets/images/icons/CheckMark.png" style="margin: 2% 1%; height: 20px; width: auto;" alt=""> MYTHS VS. FACTS</li>
-                        </div>
-                    </div>    
-                </div>
-            </div>  
-            
-            <div class="col-4">
-                <div class="shadow solutions-box">
-                    <div class="row" style="height: 150px;">
-                        <img src="./assets/images/icons/icon-k12experience2.png" style="margin: 3% 0; width: auto; height: 30px;" alt="">
-                        <h1 style="font-weight: 300; font-size: 25px;" style="margin: 0 0 1% 0;">Explore the Common Core</h1>
-                    </div>
-                    <div class="row">
-                        <div class="pcn-list" style="width: 100%;">
-                            <li><img src="./assets/images/icons/CheckMark.png" style="margin: 2% 1%; height: 20px; width: auto;" alt=""> READ THE STANDARDS</li>
-                            <li><img src="./assets/images/icons/CheckMark.png" style="margin: 2% 1%; height: 20px; width: auto;" alt=""> RESOURCES</li>
-                        </div>
-                    </div>
-            </div>
-            </div>  
 
-            <div class="col-4">
-                <div class="shadow solutions-box">
-                    <div class="row" style="height: 150px;">
-                        <img src="./assets/images/icons/icon-k12experience3.png" style="margin: 3% 0; width: auto; height: 30px;" alt="">
-                        <h1 style="font-weight: 300; font-size: 25px;" style="margin: 0 0 1% 0;">Understand how the Common Core was created</h1>
-                    </div>
-                    <div class="row">
-                        <div class="pcn-list" style="width: 100%;">
-                            <li><img src="./assets/images/icons/CheckMark.png" style="margin: 2% 1%; height: 20px; width: auto;" alt=""> PROCESS</li>
-                            <li><img src="./assets/images/icons/CheckMark.png" style="margin: 2% 1%; height: 20px; width: auto;" alt=""> FREQUENTLY ASKED QUESTIONS</li>
+        <div class="row">
+            <h1 style="margin: auto; color: #004a80; font-weight: 200; font-size: 35px; text-align: center; text-transform: none;">Preparing America's students for success.</h1>
+            <p style="margin: auto; color: #393939; font-weight: 200; font-size: 18px; text-align: center; width: 70%; margin-top:3%;">Common Core is a set of high-quality academic standards in mathematics and English language arts/literacy (ELA). These learning goals outline what a student should know and be able to do at the end of each grade.</p>
+        </div>
+
+        <div class="row">
+
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="shadow solutions-box">
+                        <img src="./assets/icons/icon-SECURITY.png" height="46px" width="auto" style="margin: 10 0 25px 0;" alt="">
+                        <h1 style="height:50px;">Learn why the Common Core is important for your child</h1>
+                        <p style="height:80px;">
+                            <a href="#" class="btn" style="padding: 8px 0;" role="button">WHAT PARENTS SHOULD KNOW</a>
+                            <a href="#" class="btn" style="padding: 8px 0;" role="button">MYTHS VS. FACTS</a>        
+                        </p>
+                        <div class="row">
+                            <a href="mobility" class="btn" role="button">LEARN MORE</a>
                         </div>
                     </div>
             </div>
-            </div>  
+
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="shadow solutions-box">
+                        <img src="./assets/icons/icon-SECURITY.png" height="46px" width="auto" style="margin: 10 0 25px 0;" alt="">
+                        <h1 style="height:50px;">Explore the Common Core</h1>
+                        <p style="height:80px;">
+                            <a href="#" class="btn" style="padding: 8px 0;" role="button">READ THE STANDARDS</a>
+                            <a href="#" class="btn" style="padding: 8px 0;" role="button">RESOURCES</a>                    
+                        </p>
+                        <div class="row">
+                            <a href="education" class="btn" role="button">LEARN MORE</a>
+                        </div>
+                    </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="shadow solutions-box">
+                        <img src="./assets/icons/icon-SECURITY.png" height="46px" width="auto" style="margin: 10 0 25px 0;" alt="">
+                        <h1 style="height:50px;">Understand how the Common Core was created</h1>
+                        <p style="height:80px;">
+                            <a href="#" class="btn" style="padding: 8px 0;" role="button">PROCESS</a>
+                            <a href="#" class="btn" style="padding: 8px 0;" role="button">FREQUENTLY ASKED QUESTIONS</a>                    
+                        </p>
+                        <div class="row">
+                            <a href="education" class="btn" role="button">LEARN MORE</a>
+                        </div>
+                    </div>
+            </div>
+
+
         </div>
+    
     </div>
 
     <div class="row" style="width: 50%; margin: auto;">
@@ -212,10 +250,10 @@
 
             <div class="col-2">
                 <h1>Links</h1>
-                <a href="index.php"><li>Home</li></a>
-                <a href="index.php"><li>Services</li></a>
-                <a href="index.php"><li>Products</li></a>
-                <a href="index.php"><li>Contact</li></a>
+                <a href="index"><li>Home</li></a>
+                <a href="Solutions"><li>Solutions</li></a>
+                <a href="Products"><li>Products</li></a>
+                <a href="Contact-Us"><li>Contact</li></a>
             </div>
 
 

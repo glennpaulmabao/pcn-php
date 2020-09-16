@@ -2,7 +2,6 @@ p{
     font-weight: 200 !important;
 }
 
-
 .topheader{
     padding: 10px;
     background-color: #004a80;
@@ -239,7 +238,7 @@ hr{
 .form-bg{
     height: 654px;
     width: 100%;
-    background-image: url(./images/formbg.png);
+    background-image: url(./assets/images/homepage-form-bg.png/);
     background-color: #0d3051;
     background-size: cover;
     background-position: top center;
@@ -286,7 +285,7 @@ hr{
     background-repeat: no-repeat;
 }
 .mobility-form-bg{
-    margin: 10% 0 0 0;
+    margin: 0px;
     height: 654px;
     width: 100%;
     background-image: url(./images/stock-photo-san-francisco-skyline-retro-view-america-spirit-california-theme-usa-background-518796124.jpg);
@@ -300,7 +299,7 @@ hr{
     margin: 10% 0 0 0;
     height: 654px;
     width: 100%;
-    background-image: url(./images/educ-form-bg.png);
+    background-image: url(.assets/images/education-form-bg.png);
     background-color: #0d3051;
     background-size: cover;
     background-position: top center;
@@ -386,6 +385,7 @@ hr{
 }
 
 .pcn-mobility-hero{
+    text-align: center;
     padding:0 10% 0 10%;
     background-repeat: no-repeat;
     background-size: cover ;
@@ -397,7 +397,7 @@ hr{
     color: white;
     font-weight: 800;
     width: 70%;
-    margin: 10% auto;
+    margin: 10% auto 0;
 }
 .pcn-mobility-hero-text p{
     color: white;
@@ -407,9 +407,10 @@ hr{
 }
 
 .mobility-text-bg{
-    background-color: #ffffff;
+    background-color: none !important;
     padding: 50px;
 }
+
 .pcn-mobility-technologies{
     margin: 10%;
 }
@@ -598,6 +599,24 @@ h1{
     }
 }
 @media only screen and (max-width: 768px) {
+    .pcn-mobility-hero{
+        vertical-align: middle;
+        text-align: left;
+        padding: 0px;
+    }
+    .pcn-mobility-hero-text h1{
+        font-size: 30px;
+        color: white !important;
+        font-weight: 800;
+        width: 90%;
+        margin: 20vh auto 0 !important;
+    }
+    .pcn-mobility-hero-text p{
+        color: #ffffff !important;
+        font-weight: 200;
+        width: 90%;
+        margin: 2% auto !important;
+    }
     .carousel-indicators{
         justify-content: left;
         margin: 0 0 -6% 9%;
@@ -617,6 +636,25 @@ h1{
 }
 
 @media only screen and (max-width: 600px) {
+    .pcn-mobility-hero{
+        vertical-align: middle;
+        text-align: left;
+        padding: 0px;
+    }
+    
+    .pcn-mobility-hero-text h1{
+        font-size: 25px;
+        color: white !important;
+        font-weight: 800;
+        width: 100%;
+        margin: 20vh auto 0 !important;
+    }
+    .pcn-mobility-hero-text p{
+        color: #ffffff !important;
+        font-weight: 200;
+        width: 100%;
+        margin: 2% auto !important;
+    }
     .carousel-indicators{
         justify-content: left;
         margin: 0 0 -6% 5%;
